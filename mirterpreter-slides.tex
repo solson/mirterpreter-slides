@@ -1,0 +1,41 @@
+\documentclass{beamer}
+\usecolortheme{beaver}
+
+% Fonts
+\usepackage{fontspec}
+\usepackage[sfdefault]{sourcesanspro}
+\usepackage[scale=0.85]{sourcecodepro}
+% \usepackage[T1]{fontenc}
+
+\usepackage{minted}
+
+\title{MIRterpreter}
+\subtitle{
+  An interpreter for the Rust compiler's mid-level intermediate representation}
+\author{Scott Olson}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}[fragile]
+  \frametitle{Example Rust code}
+  \inputminted{rust}{code.rs}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{OMG TEXT}
+
+  \begin{itemize}
+    \item This is some plain old basic text. It keeps going for a while, maybe
+      even long enough to wrap to the next line. No, almost surely. There it
+      goes. It did it. Consider this line wrapped.
+
+    \item This is the next bit of text.
+
+    % \item What if I told you I had an \mintinline{rust}{impl} for a
+    %   \mintinline{rust}{trait Foo}?
+  \end{itemize}
+\end{frame}
+
+\end{document}
