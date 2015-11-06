@@ -1,0 +1,5 @@
+digraph Mir {
+    BB0[label=<<TABLE ALIGN="LEFT"><TR><TD>BB0</TD></TR><TR><TD>Var₀ = Arg₀</TD></TR><TR><TD>Tmp₁ = Var₀</TD></TR><TR><TD>Tmp₂ = Var₀</TD></TR><TR><TD>ReturnPointer = Mul(Tmp₁,Tmp₂)</TD></TR><TR><TD>goto → BB1</TD></TR></TABLE>>][shape="none"];
+    BB1[label=<<TABLE ALIGN="LEFT"><TR><TD>BB1</TD></TR><TR><TD>return</TD></TR></TABLE>>][shape="none"];
+    BB0 -> BB1;
+}
