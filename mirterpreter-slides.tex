@@ -56,13 +56,22 @@
 
   It's a new programming language from Mozilla, and it looks like this:
 
-  \definecolor{bg}{rgb}{0.95,0.95,0.95}
-  \inputminted[
-    fontsize=\footnotesize,
-    xleftmargin=.3in,
-    mathescape
-  ]
-  {rust}{sample.rs}
+  \begin{minted}[fontsize=\footnotesize, mathescape]{rust}
+    fn factorial(n: u64) -> u64 {
+        (1..n).fold(1, |a, b| a * b)
+    }
+
+    fn main() {
+        for x in 1..6 {
+            println!("{}", factorial(x));
+        }
+        // $\Rightarrow$ 1
+        // $\Rightarrow$ 1
+        // $\Rightarrow$ 2
+        // $\Rightarrow$ 6
+        // $\Rightarrow$ 24
+    }
+  \end{minted}
 \end{frame}
 
 \begin{frame}
