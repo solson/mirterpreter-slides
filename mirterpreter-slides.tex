@@ -56,7 +56,12 @@
 
   It's a new programming language from Mozilla, and it looks like this:
 
-  \begin{minted}[fontsize=\footnotesize, mathescape]{rust}
+  \begin{minted}[
+    autogobble,
+    fontsize=\footnotesize,
+    mathescape,
+    xleftmargin=.3in,
+  ]{rust}
     fn factorial(n: u64) -> u64 {
         (1..n).fold(1, |a, b| a * b)
     }
